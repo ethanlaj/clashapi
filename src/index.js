@@ -13,6 +13,7 @@ class ClashApi {
     this.token = token || env.COC_API_TOKEN;
     this.uri = uri || config.uri;
     this.requestDefaults = request || {};
+      console.log(this.requestDefaults);
     if (!this.token) {
       throw new Error('Must define a token option or COC_API_TOKEN env variable');
     }
