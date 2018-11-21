@@ -41,6 +41,7 @@ var ClashApi = function () {
   _createClass(ClashApi, [{
     key: 'requestOptions',
     value: function requestOptions(opts) {
+      console.log(opts);
       return (0, _lodash.assign)(opts, {
         headers: {
           Accept: 'application/json',
